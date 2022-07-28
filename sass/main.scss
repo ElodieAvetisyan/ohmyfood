@@ -1,0 +1,99 @@
+
+    $couleurprimaire: #9356DC;
+    $couleursecondaire: #FF79DA;
+    $couleurtertiaire:#99E2D0;
+
+    @mixin flexcenter {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+/*header*/
+
+header{
+    width: 100%;
+    background: rgb(232, 228, 228) ;
+    @include flexcenter();
+
+    .localisation{
+    border: 1px solid rgb(246, 244, 244);
+    background-color: rgba(212, 210, 210, 0.911);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    @include flexcenter();
+                 }
+    .ville{
+    padding-left: 20px;
+    font-weight: 900;
+          }
+    form{
+  width: 100%;
+        }
+
+        h2{
+            margin-top: 10%;
+            font-size: 25px;
+            font-weight: 900;
+            text-align: center;
+        }
+        h3{
+            font-size: 17px;
+            font-weight: 400;
+            text-align: center;
+        }
+        button{
+            background-color: #9356DC;
+            color: white;
+           margin-left: 10%;
+           margin-bottom: 10%;
+           margin-top: 10%;
+           border-radius: 50px;
+           width: 300px;
+           height: 50px;
+        }
+    }
+
+    /*main*/
+
+    main{
+        h2{
+            font-size: 20px;
+            font-weight: 900;
+            margin-left: 5%;
+        }
+
+        ol li{
+            border: 1px solid grey;
+            width: 90%;
+            height: 50px;
+            border-radius: 20px;
+            margin-bottom: 5%;
+            background-color: rgba(238, 237, 237, 0.884);
+            @include flexcenter()
+        }
+        .fa-solid.fa-mobile-screen-button{
+           margin-right: 20px;
+        }
+        .fa-solid.fa-list{
+            margin-right: 20px;
+        }
+        .fa-solid.fa-store{
+            margin-right: 20px;
+        }
+    }
+
+    /*partie restaurants*/
+
+    section{
+      .bloc{
+        border: 1px solid grey;
+        width: 90%;
+        .figure-image{
+           width: 50px;
+        }
+      }
+    }
+    
