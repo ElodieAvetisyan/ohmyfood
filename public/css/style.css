@@ -1,14 +1,25 @@
+body {
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+}
+
+.logo {
+  font-family: "Shrikhand", sans-serif;
+  text-align: center;
+  padding: 1px;
+}
+
 /*header*/
 header {
   width: 100%;
-  background: rgb(232, 228, 228);
+  background: rgba(240, 234, 234, 0.81);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 header .localisation {
   border: 1px solid rgb(246, 244, 244);
-  background-color: rgba(212, 210, 210, 0.911);
+  background-color: rgba(212, 210, 210, 0.805);
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -33,16 +44,20 @@ header h3 {
   font-size: 17px;
   font-weight: 400;
   text-align: center;
+  width: 99%;
 }
 header button {
-  background-color: #9356DC;
+  background: linear-gradient(#FF79DA, #9356DC);
   color: white;
-  margin-left: 10%;
+  border: none;
+  box-shadow: 0 0 1em rgb(198, 197, 197);
+  margin-left: 15%;
   margin-bottom: 10%;
-  margin-top: 10%;
+  margin-top: 5%;
   border-radius: 50px;
-  width: 300px;
+  width: 70%;
   height: 50px;
+  font-size: 18px;
 }
 
 /*main*/
@@ -50,14 +65,17 @@ main h2 {
   font-size: 20px;
   font-weight: 900;
   margin-left: 5%;
+  padding-top: 5%;
 }
-main ol li {
-  border: 1px solid grey;
+main ul li {
+  border: 1px solid rgba(240, 234, 234, 0.81);
+  box-shadow: 0 0 1em rgb(198, 197, 197);
   width: 90%;
   height: 50px;
+  font-weight: 900;
   border-radius: 20px;
-  margin-bottom: 5%;
-  background-color: rgba(238, 237, 237, 0.884);
+  margin-bottom: 8%;
+  background-color: rgba(240, 234, 234, 0.81);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -73,12 +91,223 @@ main .fa-solid.fa-store {
 }
 
 /*partie restaurants*/
-section .bloc {
-  border: 1px solid grey;
-  width: 90%;
+section {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(240, 234, 234, 0.81);
 }
-section .bloc .figure-image {
-  width: 50px;
+section .bloc a {
+  display: block;
+  flex-wrap: wrap;
+  width: 90%;
+  height: 220px;
+  background-color: #fff;
+  border: 1px solid rgb(242, 242, 242);
+  border-radius: 20px;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 5%;
+  overflow: hidden;
+  text-decoration: none;
+  box-shadow: 0 0 1em rgb(198, 197, 197);
+}
+section figure {
+  margin: 0;
+}
+section .figure-image {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  margin-bottom: 2%;
+}
+section .texte-sous-photo {
+  width: 100%;
+  text-decoration: none;
+  font-weight: 900;
+  font-size: 15px;
+  color: black;
+  margin-left: 5%;
+  padding-top: 0;
+}
+section .texte-sous-photo h3 {
+  font-size: 19px;
+  font-weight: 900;
+  margin: 0;
+  padding: 0;
+}
+section .texte-sous-photo p {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+section .fa-regular.fa-heart {
+  display: inline;
+  float: right;
+  margin-right: 5%;
+  color: black;
+  font-size: 20px;
+}
+
+/*footer*/
+footer {
+  width: 100%;
+  height: 230px;
+  background-color: black;
+  color: white;
+}
+footer .logo_footer {
+  color: #fff;
+  font-family: "Shrikhand", sans-serif;
+  font-size: 12px;
+  margin-left: 12%;
+  padding-top: 5%;
+}
+footer ul li {
+  color: white;
+  padding: 5px;
+  font-size: 17px;
+  list-style-type: none;
+  text-decoration: none;
+}
+footer .fa-solid.fa-utensils {
+  padding-right: 25px;
+}
+footer .fa-solid.fa-handshake-angle {
+  padding-right: 20px;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+  font-size: 17px;
+}
+
+/* css de la page 1*/
+/*entete page 1*/
+.page1 {
+  background-color: rgba(212, 210, 210, 0.805);
+}
+
+header-1 {
+  width: 100%;
+}
+header-1 .logo-1 {
+  text-align: center;
+  font-family: "Shrikhand", sans-serif;
+}
+header-1 .image-entete {
+  width: 100%;
+}
+
+.titre-page1 h1 {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 26px;
+  margin-left: 5%;
+}
+.titre-page1 .fa-regular.fa-heart {
+  padding-left: 18%;
+}
+
+.blocs-entrees .bloc {
+  border: 1px solid grey;
+  background-color: white;
+  width: 90%;
+  margin-left: 5%;
+  height: 80px;
+  margin-bottom: 15px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.blocs-entrees h3 {
+  font-size: 15px;
+  padding-left: 10%;
+  font-weight: 900;
+}
+.blocs-entrees h4 {
+  font-size: 12px;
+  margin-top: 0;
+  padding-left: 10%;
+}
+.blocs-entrees p {
+  margin-top: 10%;
+  margin-right: 0;
+  font-weight: 900;
+}
+
+.blocs-plats .bloc {
+  border: 1px solid grey;
+  background-color: white;
+  width: 90%;
+  margin-left: 5%;
+  height: 80px;
+  margin-bottom: 15px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.blocs-plats h3 {
+  font-size: 15px;
+  padding-left: 10%;
+  font-weight: 900;
+}
+.blocs-plats h4 {
+  font-size: 12px;
+  margin-top: 0;
+  padding-left: 10%;
+}
+.blocs-plats p {
+  margin-top: 10%;
+  margin-right: 0;
+  font-weight: 900;
+}
+
+.blocs-desserts .bloc {
+  border: 1px solid grey;
+  background-color: white;
+  width: 90%;
+  margin-left: 5%;
+  height: 80px;
+  margin-bottom: 15px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.blocs-desserts h3 {
+  font-size: 15px;
+  padding-left: 10%;
+  font-weight: 900;
+}
+.blocs-desserts h4 {
+  font-size: 12px;
+  margin-top: 0;
+  padding-left: 10%;
+}
+.blocs-desserts p {
+  margin-top: 10%;
+  margin-right: 0;
+  font-weight: 900;
+}
+
+.boutton-commander {
+  background: linear-gradient(#FF79DA, #9356DC);
+  color: white;
+  border: none;
+  box-shadow: 0 0 1em rgb(198, 197, 197);
+  margin-left: 15%;
+  border-radius: 50px;
+  width: 70%;
+  height: 50px;
+  font-size: 18px;
+}
+.boutton-commander button {
+  margin-left: 30%;
+  margin-top: 5%;
+  text-decoration: none;
+  list-style: none;
 }
 
 /*# sourceMappingURL=style.css.map */
