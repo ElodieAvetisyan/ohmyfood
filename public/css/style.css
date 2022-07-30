@@ -58,9 +58,13 @@ header button {
   width: 70%;
   height: 50px;
   font-size: 18px;
+  font-weight: 600;
 }
 
 /*main*/
+main {
+  width: 100%;
+}
 main h2 {
   font-size: 20px;
   font-weight: 900;
@@ -184,8 +188,9 @@ footer a {
 
 /* css de la page 1*/
 /*entete page 1*/
-.page1 {
-  background-color: rgba(212, 210, 210, 0.805);
+.page-1 {
+  background-color: rgba(240, 234, 234, 0.81);
+  width: 100%;
 }
 
 header-1 {
@@ -206,95 +211,134 @@ header-1 .image-entete {
 }
 .titre-page1 .fa-regular.fa-heart {
   padding-left: 18%;
+  font-size: 25px;
 }
 
+.blocs-entrees h2 {
+  font-size: 15px;
+  border-bottom: 3px solid #99E2D0;
+  width: 50px;
+  padding-bottom: 10px;
+}
 .blocs-entrees .bloc {
-  border: 1px solid grey;
+  border: 1px solid rgb(217, 215, 215);
   background-color: white;
   width: 90%;
   margin-left: 5%;
-  height: 80px;
+  height: 60px;
   margin-bottom: 15px;
-  border-radius: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 2em rgb(198, 197, 197);
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
 }
 .blocs-entrees h3 {
-  font-size: 15px;
-  padding-left: 10%;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: 16px;
+  padding-left: 5%;
   font-weight: 900;
 }
 .blocs-entrees h4 {
-  font-size: 12px;
+  font-size: 14px;
+  font-weight: 300;
   margin-top: 0;
-  padding-left: 10%;
+  padding-left: 5%;
 }
 .blocs-entrees p {
-  margin-top: 10%;
-  margin-right: 0;
+  margin-top: -40px;
+  margin-right: 30px;
   font-weight: 900;
+  font-size: 13px;
+  display: flex;
+  justify-content: right;
+  align-items: center;
 }
 
+.blocs-plats h2 {
+  font-size: 15px;
+  border-bottom: 3px solid #99E2D0;
+  width: 50px;
+  padding-bottom: 10px;
+}
 .blocs-plats .bloc {
-  border: 1px solid grey;
+  border: 1px solid rgb(217, 215, 215);
   background-color: white;
   width: 90%;
   margin-left: 5%;
-  height: 80px;
+  height: 60px;
   margin-bottom: 15px;
-  border-radius: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 2em rgb(198, 197, 197);
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
 }
 .blocs-plats h3 {
-  font-size: 15px;
-  padding-left: 10%;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: 16px;
+  padding-left: 5%;
   font-weight: 900;
 }
 .blocs-plats h4 {
-  font-size: 12px;
+  font-size: 14px;
+  font-weight: 300;
   margin-top: 0;
-  padding-left: 10%;
+  padding-left: 5%;
 }
 .blocs-plats p {
-  margin-top: 10%;
-  margin-right: 0;
+  margin-top: -40px;
+  margin-right: 30px;
   font-weight: 900;
+  font-size: 13px;
+  display: flex;
+  justify-content: right;
+  align-items: center;
 }
 
+.blocs-desserts h2 {
+  font-size: 15px;
+  border-bottom: 3px solid #99E2D0;
+  width: 50px;
+  padding-bottom: 10px;
+}
 .blocs-desserts .bloc {
-  border: 1px solid grey;
+  border: 1px solid rgb(217, 215, 215);
   background-color: white;
   width: 90%;
   margin-left: 5%;
-  height: 80px;
+  height: 60px;
   margin-bottom: 15px;
-  border-radius: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 2em rgb(198, 197, 197);
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
 }
 .blocs-desserts h3 {
-  font-size: 15px;
-  padding-left: 10%;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: 16px;
+  padding-left: 5%;
   font-weight: 900;
 }
 .blocs-desserts h4 {
-  font-size: 12px;
+  font-size: 14px;
+  font-weight: 300;
   margin-top: 0;
-  padding-left: 10%;
+  padding-left: 5%;
 }
 .blocs-desserts p {
-  margin-top: 10%;
-  margin-right: 0;
+  margin-top: -40px;
+  margin-right: 30px;
   font-weight: 900;
+  font-size: 13px;
+  display: flex;
+  justify-content: right;
+  align-items: center;
 }
 
 .boutton-commander {
   background: linear-gradient(#FF79DA, #9356DC);
-  color: white;
   border: none;
   box-shadow: 0 0 1em rgb(198, 197, 197);
   margin-left: 15%;
@@ -302,12 +346,30 @@ header-1 .image-entete {
   width: 70%;
   height: 50px;
   font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10%;
+  margin-top: 6%;
 }
-.boutton-commander button {
-  margin-left: 30%;
-  margin-top: 5%;
+.boutton-commander a {
   text-decoration: none;
   list-style: none;
+  color: white;
+}
+
+/*modification page 2*/
+.image-entete2 {
+  width: 100%;
+  height: 250px;
+}
+
+/*modification page 3*/
+.image-entete3 {
+  width: 100%;
+}
+
+/*modification page4*/
+.image-entete4 {
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
