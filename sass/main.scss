@@ -54,7 +54,7 @@ header{
             text-align: center;
             width: 99%;
         }
-        button{
+        .bouton-explorer{
             background:linear-gradient(#FF79DA,#9356DC);
             color: white;
             border: none;
@@ -67,7 +67,10 @@ header{
            height: 50px;
            font-size: 18px;
            font-weight: 600;
-           
+           &:hover{
+            background:linear-gradient(#ff79d9c2,#9256dcc4);
+            box-shadow: 0 0 2em rgb(179, 178, 178);
+           }
         }
 }
            
@@ -84,26 +87,59 @@ header{
             padding-top: 5%;
         }
 
-        ul li{
+        ul {
+           width: 100%;
+           }
+        span{
+            position: relative;
+            padding: 0px;
+            margin: -70px
+            ;
+           
+            width: 21px;
+            height: 21px;
+            border-radius: 50px;
+            background-color: #9356DC;
+            @include flexcenter();
+            color: white;
+            font-size: 12px;
+            margin-right:20px;
+            
+
+        }
+        
+        li{
             border: 1px solid  rgba(240, 234, 234, 0.81);
             box-shadow: 0 0 1em rgb(198, 197, 197);
-            width:90%;
+            width:85%;
             height: 50px;
+            margin: 20px auto;
             font-weight: 900;
             border-radius: 20px;
-            margin-bottom: 8%;
             background-color:  rgba(240, 234, 234, 0.81);
             @include flexcenter();
+            &:hover{
+                background-color: #deccf4ca;
         
         }
+    }
         .fa-solid.fa-mobile-screen-button{
            margin-right: 20px;
+           &:hover{
+            color:#9356DC
+           }
         }
         .fa-solid.fa-list{
             margin-right: 20px;
+            &:hover{
+                color:#9356DC
+               }
         }
         .fa-solid.fa-store{
             margin-right: 20px;
+            &:hover{
+                color:#9356DC
+               }
         }
     }
 
@@ -113,6 +149,7 @@ section{
     width: 100%;
     height: 100%;
     background-color: rgba(240, 234, 234, 0.81);
+    padding: 20px 0;
     .bloc a{
         display: block;
         flex-wrap: wrap;
@@ -121,9 +158,7 @@ section{
         background-color: #fff;
         border: 1px solid rgb(242, 242, 242);
         border-radius: 20px;
-        margin-left: 5%;
-        margin-right: 5%;
-        margin-bottom: 5%;
+        margin:20px auto;
         overflow: hidden;
         text-decoration: none;
         box-shadow: 0 0 1em rgb(198, 197, 197);
@@ -165,12 +200,33 @@ section{
         display:inline;
         float: right;
         margin-right: 5%;
-        color: black;
-        font-size: 20px;
+        color: grey;
+        &:before{
+    font-weight: bold;
+    transition: color 1s ease-out;
+        }
+        &:hover{
+            color: #9356DC;
+            cursor: pointer;
+           
         }
     }
+    .nouveau{
+        span{
+            display: flex;
+            float:right;
+        width: 80px;
+        height: 30px;
+        color: green;
+        font-weight: 900;
+        border-radius: 0;
+        background-color: #99E2D0;
+        @include flexcenter()
+        }
+      
+    }
+}
 
-    
 /*footer*/
 
 footer{
@@ -213,7 +269,10 @@ footer{
 /*entete page 1*/
 .page-1{
     background-color: rgba(240, 234, 234, 0.81);
+    border-radius: 30px 30px 0 0;
    width: 100%;
+   
+   
 }
 
 header-1{
@@ -228,7 +287,7 @@ header-1{
 }
 
 .titre-page1{
-    h1{
+    h2{
         font-family:'Shrikhand', sans-serif;
         font-size: 26px;
         margin-left: 5%;
@@ -392,11 +451,13 @@ header-1{
            font-weight: 600;
         margin-bottom: 10%;
         margin-top: 06%;
-        a{
-            text-decoration: none;
-            list-style: none;
-            color: white;  
-        }
+        text-decoration: none;
+        list-style: none;
+        color: white;
+        &:hover{
+            background:linear-gradient(#ff79d9c2,#9256dcc4);
+            box-shadow: 0 0 2em rgb(179, 178, 178);
+           }
         
     }
 
