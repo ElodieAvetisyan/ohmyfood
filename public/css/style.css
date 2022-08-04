@@ -1,15 +1,15 @@
-body {
-  width: 100%;
-  font-family: "Roboto", sans-serif;
-}
-
+/*header*/
 .logo {
   font-family: "Shrikhand", sans-serif;
   text-align: center;
   padding: 1px;
 }
 
-/*header*/
+body {
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+}
+
 header {
   width: 100%;
   background: rgba(240, 234, 234, 0.81);
@@ -23,7 +23,6 @@ header .localisation {
   width: 100%;
   display: flex;
   flex-direction: row;
-  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -47,7 +46,7 @@ header h3 {
   width: 99%;
 }
 header .bouton-explorer {
-  background: linear-gradient(#FF79DA, #9356DC);
+  background: linear-gradient(#9356DC, #FF79DA);
   color: white;
   border: none;
   box-shadow: 0 0 1em rgb(198, 197, 197);
@@ -61,11 +60,44 @@ header .bouton-explorer {
   font-weight: 600;
 }
 header .bouton-explorer:hover {
-  background: linear-gradient(rgba(255, 121, 217, 0.7921568627), rgba(146, 86, 220, 0.7921568627));
+  background: linear-gradient(rgba(146, 86, 220, 0.9176470588), rgba(255, 121, 217, 0.7921568627));
   box-shadow: 0 0 2em rgb(179, 178, 178);
 }
 
-/*main*/
+/*footer*/
+footer {
+  width: 100%;
+  height: 230px;
+  background-color: black;
+  color: white;
+}
+footer .logo_footer {
+  color: #fff;
+  font-family: "Shrikhand", sans-serif;
+  font-size: 12px;
+  margin-left: 12%;
+  padding-top: 5%;
+}
+footer ul li {
+  color: white;
+  padding: 5px;
+  font-size: 17px;
+  list-style-type: none;
+  text-decoration: none;
+}
+footer .fa-solid.fa-utensils {
+  padding-right: 25px;
+}
+footer .fa-solid.fa-handshake-angle {
+  padding-right: 20px;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+  font-size: 17px;
+}
+
+/*main partie fonctionnement de la page d'acceuil*/
 main {
   width: 100%;
 }
@@ -79,7 +111,6 @@ main ul {
   width: 100%;
 }
 main span {
-  position: relative;
   padding: 0px;
   margin: -70px;
   width: 21px;
@@ -128,14 +159,15 @@ main .fa-solid.fa-store:hover {
   color: #9356DC;
 }
 
-/*partie restaurants*/
+/*partie restaurants de la page d'acceuil*/
 section {
   width: 100%;
   height: 100%;
   background-color: rgba(240, 234, 234, 0.81);
   padding: 20px 0;
 }
-section .bloc a {
+section .bloc-acc a {
+  position: relative;
   display: block;
   flex-wrap: wrap;
   width: 90%;
@@ -178,23 +210,11 @@ section .texte-sous-photo p {
   margin: 0;
   padding: 0;
 }
-section .fa-regular.fa-heart {
-  display: inline;
-  float: right;
-  margin-right: 5%;
-  color: grey;
-}
-section .fa-regular.fa-heart:before {
-  font-weight: bold;
-  transition: color 1s ease-out;
-}
-section .fa-regular.fa-heart:hover {
-  color: #9356DC;
-  cursor: pointer;
-}
-section .nouveau span {
-  display: flex;
-  float: right;
+
+.nouveau span {
+  position: absolute;
+  left: 90%;
+  top: 40%;
   width: 80px;
   height: 30px;
   color: green;
@@ -206,44 +226,145 @@ section .nouveau span {
   align-items: center;
 }
 
-/*footer*/
-footer {
+/*page mail*/
+.mail {
+  font-family: "roboto", sans-serif;
+  margin-top: 10%;
+  font-weight: 600;
+  background-color: rgba(240, 234, 234, 0.81);
   width: 100%;
-  height: 230px;
-  background-color: black;
+  height: 900px;
+  padding: 50px;
+}
+.mail label {
+  width: 100%;
+  padding: 5%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.mail button {
+  margin-top: 5%;
+  width: 40%;
+  height: 40px;
+  border-radius: 30%;
+  border: none;
+  background-color: #99E2D0;
   color: white;
+  font-weight: 600;
+  font-size: 18px;
 }
-footer .logo_footer {
-  color: #fff;
-  font-family: "Shrikhand", sans-serif;
-  font-size: 12px;
-  margin-left: 12%;
-  padding-top: 5%;
+
+/*coeur de toutes les pages*/
+.fa-regular.fa-heart {
+  display: inline;
+  float: right;
+  margin-right: 5%;
 }
-footer ul li {
+.fa-regular.fa-heart::after {
+  content: "";
+  font-weight: bold;
+  transition: color 1s ease-out;
+}
+.fa-regular.fa-heart:hover {
+  color: #9356DC;
+  cursor: pointer;
+}
+
+/* style pour le loading spiner*/
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: visibility 2s, opacity 2;
+}
+.loader::after {
+  content: "";
+  width: 75px;
+  height: 75px;
+  border: 15px solid #9356DC;
+  border-top-color: #FF79DA;
+  border-radius: 50%;
+  animation: loading 0.75s ease infinite;
+}
+
+@keyframes loading {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
+/*animation check*/
+.bloc {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+.bloc .items1 {
+  width: 91%;
+  padding-right: 10px;
+  transition: all 0.3s;
+  text-overflow: ellipsis;
+}
+.bloc .items1 h3, .bloc .items1 h4 {
+  overflow: hidden;
+  white-space: nowrap;
+}
+.bloc .items2 {
+  width: 25%;
+  position: relative;
+  padding-left: 9%;
+  right: -2px;
+  transition: all 0.3s;
+}
+.bloc .items2 p {
+  margin: 0;
+  display: block;
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+}
+.bloc .items2 .animation-check {
+  display: block;
+  width: 100%;
+  margin: 0;
+}
+.bloc .items2 .animation-check .i-check {
+  width: 100%;
+  height: 60px;
+  background-color: #99E2D0;
+  border-radius: 0px 15px 15px 0px;
   color: white;
-  padding: 5px;
-  font-size: 17px;
-  list-style-type: none;
-  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
 }
-footer .fa-solid.fa-utensils {
-  padding-right: 25px;
+.bloc:hover .items1 {
+  width: 75%;
+  transition: all 0.3s;
 }
-footer .fa-solid.fa-handshake-angle {
-  padding-right: 20px;
+.bloc:hover .items2 {
+  transition: all 0.3s;
 }
-footer a {
-  text-decoration: none;
-  color: white;
-  font-size: 17px;
+.bloc:hover .items2 i {
+  transform: rotate(360deg);
+  transition: transform 1s;
 }
 
 /* css de la page 1*/
 /*entete page 1*/
 .page-1 {
-  background-color: rgba(240, 234, 234, 0.81);
-  border-radius: 30px 30px 0 0;
+  position: relative;
+  margin-top: 55%;
+  background-color: rgb(240, 234, 234);
+  border-radius: 40px 40px 0 0;
   width: 100%;
 }
 
@@ -255,13 +376,16 @@ header-1 .logo-1 {
   font-family: "Shrikhand", sans-serif;
 }
 header-1 .image-entete {
+  position: absolute;
   width: 100%;
+  margin-left: -50%;
 }
 
 .titre-page1 h2 {
   font-family: "Shrikhand", sans-serif;
   font-size: 26px;
   margin-left: 5%;
+  margin-top: -10px;
 }
 .titre-page1 .fa-regular.fa-heart {
   padding-left: 18%;
@@ -277,9 +401,9 @@ header-1 .image-entete {
 .blocs-entrees .bloc {
   border: 1px solid rgb(217, 215, 215);
   background-color: white;
-  width: 90%;
+  width: 92%;
   margin-left: 5%;
-  height: 60px;
+  height: 61px;
   margin-bottom: 15px;
   border-radius: 15px;
   box-shadow: 0 0 2em rgb(198, 197, 197);
@@ -318,9 +442,9 @@ header-1 .image-entete {
 .blocs-plats .bloc {
   border: 1px solid rgb(217, 215, 215);
   background-color: white;
-  width: 90%;
+  width: 92%;
   margin-left: 5%;
-  height: 60px;
+  height: 61px;
   margin-bottom: 15px;
   border-radius: 15px;
   box-shadow: 0 0 2em rgb(198, 197, 197);
@@ -359,9 +483,9 @@ header-1 .image-entete {
 .blocs-desserts .bloc {
   border: 1px solid rgb(217, 215, 215);
   background-color: white;
-  width: 90%;
+  width: 92%;
   margin-left: 5%;
-  height: 60px;
+  height: 61px;
   margin-bottom: 15px;
   border-radius: 15px;
   box-shadow: 0 0 2em rgb(198, 197, 197);
@@ -416,142 +540,25 @@ header-1 .image-entete {
 .image-entete2 {
   width: 100%;
   height: 250px;
+  position: absolute;
+  width: 100%;
+  margin-left: -50%;
 }
 
 /*modification page 3*/
 .image-entete3 {
   width: 100%;
+  position: absolute;
+  width: 100%;
+  margin-left: -50%;
 }
 
 /*modification page4*/
 .image-entete4 {
   width: 100%;
-}
-
-/*page mail*/
-.mail {
-  font-family: "roboto", sans-serif;
-  margin-top: 10%;
-  font-weight: 600;
-  background-color: rgba(240, 234, 234, 0.81);
-  width: 100%;
-  height: 900px;
-  padding: 50px;
-}
-.mail label {
-  width: 100%;
-  padding: 5%;
-  display: flex;
-  flex-wrap: wrap;
-}
-.mail button {
-  margin-top: 5%;
-  width: 40%;
-  height: 40px;
-  border-radius: 30%;
-  border: none;
-  background-color: #99E2D0;
-  color: white;
-  font-weight: 600;
-  font-size: 18px;
-}
-
-/* style pour le loading spiner*/
-.loader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #99E2D0;
-  transition: visibility 2s, opacity 2s;
-}
-.loader--hidden {
-  opacity: 0;
-  visibility: hidden;
-}
-.loader::after {
-  content: "";
-  width: 75px;
-  height: 75px;
-  border: 15px solid #9356DC;
-  border-top-color: #FF79DA;
-  border-radius: 50%;
-  animation: loading 0.75s ease infinite;
-}
-
-@keyframes loading {
-  from {
-    transform: rotate(0turn);
-  }
-  to {
-    transform: rotate(1turn);
-  }
-}
-/*animation check*/
-.bloc {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  overflow: hidden;
-}
-.bloc .items1 {
-  width: 91%;
-  padding-right: 10px;
-  transition: all 0.3s;
-}
-.bloc .items1 h3, .bloc .items1 h4 {
-  overflow: hidden;
-  white-space: nowrap;
-}
-.bloc .items2 {
-  width: 25%;
-  position: relative;
-  padding-left: 9%;
-  right: 0%;
-  transition: all 0.3s;
-}
-.bloc .items2 p {
-  margin: 0;
-  display: block;
   position: absolute;
-  bottom: 10px;
-  left: 0;
-}
-.bloc .items2 .animation-check {
-  display: block;
   width: 100%;
-  margin: 0;
-}
-.bloc .items2 .animation-check div {
-  width: 100%;
-}
-.bloc:hover .items1 {
-  width: 75%;
-  transition: all 0.3s;
-}
-.bloc:hover .items2 {
-  transition: all 0.3s;
-}
-.bloc:hover .items2 i {
-  transform: rotate(360deg);
-  transition: transform 1s;
-}
-
-.animation-check .i-check {
-  width: 45px;
-  height: 60px;
-  background-color: #99E2D0;
-  border-radius: 0px 15px 15px 0px;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin-left: -50%;
 }
 
 /*# sourceMappingURL=style.css.map */

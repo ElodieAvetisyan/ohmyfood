@@ -1,275 +1,18 @@
-
-    $couleurprimaire: #9356DC;
-    $couleursecondaire: #FF79DA;
-    $couleurtertiaire:#99E2D0;
-
-    @mixin flexcenter {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        
-    }
-
-    body{
-        width: 100%;
-        font-family: 'Roboto', sans-serif;
-    }
-
-    .logo{
-       font-family: 'Shrikhand', sans-serif;
-       text-align: center;
-       padding: 01px;
-    }
-/*header*/
-header{
-    width: 100%;
-    background: rgba(240, 234, 234, 0.81) ;
-    @include flexcenter();
-
-    .localisation{
-    border: 1px solid rgb(246, 244, 244);
-    background-color: rgba(212, 210, 210, 0.805);
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    @include flexcenter();
-                 }
-    .ville{
-    padding-left: 20px;
-    font-weight: 900;
-          }
-    form{
-  width: 100%;
-        }
-
-        h2{
-            margin-top: 10%;
-            font-size: 25px;
-            font-weight: 900;
-            text-align: center;
-        }
-        h3{
-            font-size: 17px;
-            font-weight: 400;
-            text-align: center;
-            width: 99%;
-        }
-        .bouton-explorer{
-            background:linear-gradient(#FF79DA,#9356DC);
-            color: white;
-            border: none;
-            box-shadow: 0 0 1em rgb(198, 197, 197);
-           margin-left: 15%;
-           margin-bottom: 10%;
-           margin-top: 05%;
-           border-radius: 50px;
-           width: 70%;
-           height: 50px;
-           font-size: 18px;
-           font-weight: 600;
-           &:hover{
-            background:linear-gradient(#ff79d9ca,#9256dcca);
-            box-shadow: 0 0 2em rgb(179, 178, 178);
-           }
-        }
-}
-           
-    
-
-    /*main*/
-
-    main{
-        width: 100%;
-        h2{
-            font-size: 20px;
-            font-weight: 900;
-            margin-left: 5%;
-            padding-top: 5%;
-        }
-
-        ul {
-           width: 100%;
-           }
-        span{
-            position: relative;
-            padding: 0px;
-            margin: -70px
-            ;
-           
-            width: 21px;
-            height: 21px;
-            border-radius: 50px;
-            background-color: #9356DC;
-            @include flexcenter();
-            color: white;
-            font-size: 12px;
-            margin-right:20px;
-            
-
-        }
-        
-        li{
-            border: 1px solid  rgba(240, 234, 234, 0.81);
-            box-shadow: 0 0 1em rgb(198, 197, 197);
-            width:85%;
-            height: 50px;
-            margin: 20px auto;
-            font-weight: 900;
-            border-radius: 20px;
-            background-color:  rgba(240, 234, 234, 0.81);
-            @include flexcenter();
-            &:hover{
-                background-color: #deccf4ca;
-        
-        }
-    }
-        .fa-solid.fa-mobile-screen-button{
-           margin-right: 20px;
-           &:hover{
-            color:#9356DC
-           }
-        }
-        .fa-solid.fa-list{
-            margin-right: 20px;
-            &:hover{
-                color:#9356DC
-               }
-        }
-        .fa-solid.fa-store{
-            margin-right: 20px;
-            &:hover{
-                color:#9356DC
-               }
-        }
-    }
-
-    /*partie restaurants*/
-
-section{
-    width: 100%;
-    height: 100%;
-    background-color: rgba(240, 234, 234, 0.81);
-    padding: 20px 0;
-    .bloc a{
-        display: block;
-        flex-wrap: wrap;
-        width: 90%;
-        height: 220px;
-        background-color: #fff;
-        border: 1px solid rgb(242, 242, 242);
-        border-radius: 20px;
-        margin:20px auto;
-        overflow: hidden;
-        text-decoration: none;
-        box-shadow: 0 0 1em rgb(198, 197, 197);
-
-    }
-    figure{
-        margin: 0;
-    }
-    .figure-image{
-        width: 100%;
-        height:140px;
-        object-fit: cover;
-        margin-bottom: 2%;
-    }
-    .texte-sous-photo{
-        width: 100%;
-        text-decoration: none;
-        font-weight: 900;
-        font-size: 15px;
-        color: black;
-        margin-left: 5%;
-        padding-top: 0;
-        & h3{
-            font-size: 19px;
-            font-weight: 900;
-            margin:0;
-            padding: 0;
-        }
-        & p{
-            font-size: 16px;
-            font-weight: 400;
-            margin: 0;
-            padding: 0;
-            
-        }
-      
-    }
-    .fa-regular.fa-heart{
-        display:inline;
-        float: right;
-        margin-right: 5%;
-        color: grey;
-        &:before{
-    font-weight: bold;
-    transition: color 1s ease-out;
-        }
-        &:hover{
-            color: #9356DC;
-            cursor: pointer;
-           
-        }
-    }
-    .nouveau{
-        span{
-        display: flex;
-        float:right;
-        width: 80px;
-        height: 30px;
-        color: green;
-        font-weight: 900;
-        border-radius: 0;
-        background-color: #99E2D0;
-        @include flexcenter()
-        }
-      
-    }
-}
-
-/*footer*/
-
-footer{
-    width: 100%;
-    height: 230px;
-    background-color: black;
-    color: white;
-    .logo_footer{
-        color: #fff;
-        font-family: 'Shrikhand', sans-serif;
-        font-size: 12px;
-        margin-left: 12%;
-        padding-top: 5%;
-    }
-    
+ @import "_variable.scss";
+ @import "_headerfooter.scss";
+ @import "_stylepageacc.scss";
+ @import "_stylepagemail.scss";
+ @import "_animations.scss";
    
-    ul li {
-        color: white;
-        padding:05px;
-        font-size: 17px;
-        list-style-type: none;
-        text-decoration: none;
-    }
-    .fa-solid.fa-utensils{
-    padding-right: 25px;
-    }
-    .fa-solid.fa-handshake-angle{
-        padding-right: 20px;
-    }
-
-    & a{
-        text-decoration: none;
-        color: white;
-        font-size: 17px;
-    }
-}
 
 /* css de la page 1*/
 
 /*entete page 1*/
 .page-1{
-    background-color: rgba(240, 234, 234, 0.81);
-    border-radius: 30px 30px 0 0;
+    position: relative;
+    margin-top: 55%;
+    background-color: rgb(240, 234, 234);
+    border-radius: 40px 40px 0 0;
    width: 100%;
    
    
@@ -282,7 +25,9 @@ header-1{
         font-family: 'Shrikhand',sans-serif;
     }
     .image-entete{
+        position: absolute;
      width: 100%;
+     margin-left: -50%;
     }
 }
 
@@ -291,6 +36,7 @@ header-1{
         font-family:'Shrikhand', sans-serif;
         font-size: 26px;
         margin-left: 5%;
+        margin-top: -10px;
     }
     .fa-regular.fa-heart{
         padding-left: 18%;
@@ -308,9 +54,9 @@ header-1{
         .bloc{
         border: 1px solid rgb(217, 215, 215);
         background-color: white;
-        width: 90%;
+        width: 92%;
         margin-left: 5%;
-        height: 60px;
+        height: 61px;
         margin-bottom: 15px;
         border-radius: 15px;
         box-shadow: 0 0 2em rgb(198, 197, 197);
@@ -348,16 +94,16 @@ header-1{
    .blocs-plats{
     h2{
         font-size: 15px;
-        border-bottom: 03px solid #99E2D0;
+        border-bottom: 03px solid $couleurtertiaire;
         width: 50px;
         padding-bottom: 10px;
     }
     .bloc{
         border: 1px solid rgb(217, 215, 215);
     background-color: white;
-    width: 90%;
+    width: 92%;
     margin-left: 5%;
-    height: 60px;
+    height: 61px;
     margin-bottom: 15px;
     border-radius: 15px;
     box-shadow: 0 0 2em rgb(198, 197, 197);
@@ -395,16 +141,16 @@ header-1{
     .blocs-desserts{
         h2{
         font-size: 15px;
-        border-bottom: 03px solid #99E2D0;
+        border-bottom: 03px solid $couleurtertiaire;
         width: 50px;
         padding-bottom: 10px;
     }
     .bloc{
         border: 1px solid rgb(217, 215, 215);
     background-color: white;
-    width: 90%;
+    width: 92%;
     margin-left: 5%;
-    height: 60px;
+    height: 61px;
     margin-bottom: 15px;
     border-radius: 15px;
     box-shadow: 0 0 2em rgb(198, 197, 197);
@@ -440,7 +186,7 @@ header-1{
     }
 
     .boutton-commander{
-        background:linear-gradient(#FF79DA,#9356DC);
+        background:linear-gradient($couleursecondaire,$couleurprimaire);
             border: none;
             box-shadow: 0 0 1em rgb(198, 197, 197);
            margin-left: 15%;
@@ -466,146 +212,29 @@ header-1{
     .image-entete2{
         width: 100%;
         height: 250px;
+        position: absolute;
+        width: 100%;
+        margin-left: -50%;
     }
 
     /*modification page 3*/
 
     .image-entete3{
         width: 100%;
+        position: absolute;
+        width: 100%;
+        margin-left: -50%;
     }
 
     /*modification page4*/
 
     .image-entete4{
         width: 100%;
-    }
-
-    /*page mail*/
-
-    .mail{
-        font-family: 'roboto',sans-serif;
-        margin-top: 10%;
-        font-weight: 600;
-        background-color: rgba(240, 234, 234, 0.81);
+        position: absolute;
         width: 100%;
-        height: 900px;
-       padding: 50px;
-       
-        label{
-            width: 100%;
-            padding: 05%;
-            display: flex;
-            flex-wrap: wrap;
-            
-            
-        }
-        button{
-            margin-top: 5%;
-            width: 40%;
-            height: 40px;
-            border-radius: 30%;
-            border: none;
-            background-color:#99E2D0;
-            color: white;
-            font-weight: 600;
-            font-size: 18px;
-        }
+        margin-left: -50%;
     }
 
-    /* style pour le loading spiner*/
+   
 
-    .loader{
-        position: fixed;
-        top:0;
-        left:0;
-        width: 100%;
-        height: 100%;
-        @include flexcenter();
-        background-color: #99E2D0;
-        transition: visibility 2s, opacity 2s;
-
-        &--hidden{
-            opacity: 0;
-            visibility: hidden;
-        }
-        &::after{
-            content:"";
-            width: 75px;
-            height: 75px;
-            border: 15px solid #9356DC;
-            border-top-color: #FF79DA;
-            border-radius: 50%;
-            animation: loading 0.75s ease infinite;
-        }   
-    }
-
-    @keyframes loading {
-        from { transform: rotate(0turn) }
-        to { transform: rotate(1turn) }
-    }
-
-    /*animation check*/
-
-    .bloc{
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-        overflow: hidden;
-        .items1{
-            width: 91%;
-            padding-right: 10px;
-            transition: all 0.3s;
-            h3,h4{
-                overflow: hidden;
-                white-space: nowrap;
-            }
-        }
-        .items2{
-            width: 25%;
-            position: relative;
-            padding-left: 9%;
-            right: 0%;
-            transition: all 0.3s;
-            p{
-                margin: 0;
-                display: block;
-                position: absolute;
-                bottom: 10px;
-                left: 0;
-            }
-            .animation-check{
-                display: block;
-                width: 100%;
-                margin: 0;
-                div{
-                    width: 100%;
-                }
-            }
-        }
-        &:hover{
-            .items1{
-                width: 75%;
-                transition: all 0.3s;
-            }
-            .items2{
-                transition: all 0.3s;
-                i{
-                    transform: rotate(360deg);
-                    transition: transform 1s;
-                }
-            }
-        }
-    }
-
-   .animation-check{
-        .i-check{
-            width: 45px;
-            height: 60px;
-            background-color:#99E2D0;
-            border-radius: 0px 15px 15px 0px;
-            color: white;
-            @include flexcenter();
-        }
-    }
+   
