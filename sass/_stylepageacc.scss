@@ -46,7 +46,7 @@
     .fa-solid.fa-mobile-screen-button{
        margin-right: 20px;
        &:hover{
-        color:$couleurprimaire;
+       color:$couleurprimaire;
        }
     }
     .fa-solid.fa-list{
@@ -64,6 +64,37 @@
 }
 
 /*partie restaurants de la page d'acceuil*/
+
+/*les coeurs de la page d'acceuil*/
+
+.quatresblocs{
+    .fa-regular.fa-heart{
+        display:inline;
+        float: right;
+        margin-right: -5%;
+        font-size: 18px;
+            &:hover{
+           color:$couleurprimaire;
+           cursor: pointer;  
+                   }
+                         }
+
+       .fa-solid.fa-heart{
+           display:inline;
+            float: right;
+            margin-right: 5%;
+            color: white;
+           font-size: 18px;
+              &::after{
+              content: "";
+              transition: all 1s ease;
+               color: $couleurprimaire;
+                     }
+                          }
+ }
+
+
+ /*les blocs des restaurants*/
 
 section{
 width: 100%;
@@ -117,6 +148,7 @@ figure{
     }
 }
 }
+/*l'encadré vert nouveau sur les 2 premiers blocs*/
 
 .nouveau{
     span{
@@ -135,4 +167,3 @@ figure{
     }
   
 }
-

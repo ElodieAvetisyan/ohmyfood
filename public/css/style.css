@@ -1,4 +1,5 @@
-/*header*/
+@charset "UTF-8";
+/*header de la page d'accueil*/
 .logo {
   font-family: "Shrikhand", sans-serif;
   text-align: center;
@@ -64,7 +65,7 @@ header .bouton-explorer:hover {
   box-shadow: 0 0 2em rgb(179, 178, 178);
 }
 
-/*footer*/
+/*footer de toutes les pages*/
 footer {
   width: 100%;
   height: 230px;
@@ -160,6 +161,31 @@ main .fa-solid.fa-store:hover {
 }
 
 /*partie restaurants de la page d'acceuil*/
+/*les coeurs de la page d'acceuil*/
+.quatresblocs .fa-regular.fa-heart {
+  display: inline;
+  float: right;
+  margin-right: -5%;
+  font-size: 18px;
+}
+.quatresblocs .fa-regular.fa-heart:hover {
+  color: #9356DC;
+  cursor: pointer;
+}
+.quatresblocs .fa-solid.fa-heart {
+  display: inline;
+  float: right;
+  margin-right: 5%;
+  color: white;
+  font-size: 18px;
+}
+.quatresblocs .fa-solid.fa-heart::after {
+  content: "";
+  transition: all 1s ease;
+  color: #9356DC;
+}
+
+/*les blocs des restaurants*/
 section {
   width: 100%;
   height: 100%;
@@ -211,6 +237,7 @@ section .texte-sous-photo p {
   padding: 0;
 }
 
+/*l'encadré vert nouveau sur les 2 premiers blocs*/
 .nouveau span {
   position: absolute;
   left: 90%;
@@ -254,22 +281,6 @@ section .texte-sous-photo p {
   font-size: 18px;
 }
 
-/*coeur de toutes les pages*/
-.fa-regular.fa-heart {
-  display: inline;
-  float: right;
-  margin-right: 5%;
-}
-.fa-regular.fa-heart::after {
-  content: "";
-  font-weight: bold;
-  transition: color 1s ease-out;
-}
-.fa-regular.fa-heart:hover {
-  color: #9356DC;
-  cursor: pointer;
-}
-
 /* style pour le loading spiner*/
 .loader {
   position: fixed;
@@ -278,9 +289,15 @@ section .texte-sous-photo p {
   width: 100%;
   height: 100%;
   display: flex;
+  opacity: 0;
+  z-index: -1;
+  visibility: hidden;
+  background-color: #99E2D0;
   justify-content: center;
   align-items: center;
-  transition: visibility 2s, opacity 2;
+  animation-duration: 3s;
+  animation-delay: 0s;
+  animation-name: loader;
 }
 .loader::after {
   content: "";
@@ -292,6 +309,18 @@ section .texte-sous-photo p {
   animation: loading 0.75s ease infinite;
 }
 
+@keyframes loader {
+  0% {
+    opacity: 1;
+    visibility: visible;
+    z-index: 9;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+    z-index: -1;
+  }
+}
 @keyframes loading {
   from {
     transform: rotate(0turn);
@@ -359,15 +388,7 @@ section .texte-sous-photo p {
 }
 
 /* css de la page 1*/
-/*entete page 1*/
-.page-1 {
-  position: relative;
-  margin-top: 55%;
-  background-color: rgb(240, 234, 234);
-  border-radius: 40px 40px 0 0;
-  width: 100%;
-}
-
+/* entete de toutes les pages */
 header-1 {
   width: 100%;
 }
@@ -381,6 +402,15 @@ header-1 .image-entete {
   margin-left: -50%;
 }
 
+.page-1 {
+  position: relative;
+  margin-top: 55%;
+  background-color: rgb(240, 234, 234);
+  border-radius: 40px 40px 0 0;
+  width: 100%;
+}
+
+/*entete page 1*/
 .titre-page1 h2 {
   font-family: "Shrikhand", sans-serif;
   font-size: 26px;
@@ -388,10 +418,20 @@ header-1 .image-entete {
   margin-top: -10px;
 }
 .titre-page1 .fa-regular.fa-heart {
-  padding-left: 18%;
+  margin-right: -25px;
   font-size: 25px;
 }
+.titre-page1 .fa-solid.fa-heart {
+  margin-right: -25px;
+  font-size: 25px;
+  color: white;
+  margin-left: 67px;
+}
+.titre-page1 .fa-solid.fa-heart:hover {
+  color: #9356DC;
+}
 
+/* blocs de toutes les pages */
 .blocs-entrees h2 {
   font-size: 15px;
   border-bottom: 3px solid #99E2D0;
@@ -545,6 +585,23 @@ header-1 .image-entete {
   margin-left: -50%;
 }
 
+.titre-page2 h2 {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 26px;
+  margin-left: 5%;
+  margin-top: -10px;
+}
+.titre-page2 .fa-regular.fa-heart {
+  margin-right: -25px;
+  font-size: 25px;
+}
+.titre-page2 .fa-solid.fa-heart {
+  margin-right: -25px;
+  font-size: 25px;
+  color: white;
+  margin-left: 54px;
+}
+
 /*modification page 3*/
 .image-entete3 {
   width: 100%;
@@ -553,12 +610,46 @@ header-1 .image-entete {
   margin-left: -50%;
 }
 
+.titre-page3 h2 {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 26px;
+  margin-left: 5%;
+  margin-top: -10px;
+}
+.titre-page3 .fa-regular.fa-heart {
+  margin-right: -25px;
+  font-size: 25px;
+}
+.titre-page3 .fa-solid.fa-heart {
+  margin-right: -25px;
+  font-size: 25px;
+  color: white;
+  margin-left: 110px;
+}
+
 /*modification page4*/
 .image-entete4 {
   width: 100%;
   position: absolute;
   width: 100%;
   margin-left: -50%;
+}
+
+.titre-page4 h2 {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 26px;
+  margin-left: 5%;
+  margin-top: -10px;
+}
+.titre-page4 .fa-regular.fa-heart {
+  margin-right: -25px;
+  font-size: 25px;
+}
+.titre-page4 .fa-solid.fa-heart {
+  margin-right: -25px;
+  font-size: 25px;
+  color: white;
+  margin-left: 70px;
 }
 
 /*# sourceMappingURL=style.css.map */

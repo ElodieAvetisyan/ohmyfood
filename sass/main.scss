@@ -7,16 +7,9 @@
 
 /* css de la page 1*/
 
-/*entete page 1*/
-.page-1{
-    position: relative;
-    margin-top: 55%;
-    background-color: rgb(240, 234, 234);
-    border-radius: 40px 40px 0 0;
-   width: 100%;
-   
-   
-}
+
+/* entete de toutes les pages */
+
 
 header-1{
     width: 100%;
@@ -31,6 +24,16 @@ header-1{
     }
 }
 
+.page-1{
+    position: relative;
+    margin-top: 55%;
+    background-color: rgb(240, 234, 234);
+    border-radius: 40px 40px 0 0;
+   width: 100%;  
+   
+}
+/*entete page 1*/
+
 .titre-page1{
     h2{
         font-family:'Shrikhand', sans-serif;
@@ -39,10 +42,21 @@ header-1{
         margin-top: -10px;
     }
     .fa-regular.fa-heart{
-        padding-left: 18%;
+        margin-right: -25px;
         font-size: 25px;
     }
+    .fa-solid.fa-heart{
+        margin-right: -25px;
+        font-size: 25px;
+        color: white;
+        margin-left: 67px;
+        &:hover{
+            color:$couleurprimaire;
+        }
+    }
 }
+
+/* blocs de toutes les pages */
 
     .blocs-entrees{
         h2{
@@ -217,6 +231,26 @@ header-1{
         margin-left: -50%;
     }
 
+    .titre-page2{
+        h2{
+            font-family:'Shrikhand', sans-serif;
+            font-size: 26px;
+            margin-left: 5%;
+            margin-top: -10px;
+        }
+        .fa-regular.fa-heart{
+            margin-right: -25px;
+            font-size: 25px;
+        }
+        .fa-solid.fa-heart{
+            margin-right: -25px;
+            font-size: 25px;
+            color: white;
+            margin-left: 54px;
+        }
+    }
+
+
     /*modification page 3*/
 
     .image-entete3{
@@ -226,6 +260,25 @@ header-1{
         margin-left: -50%;
     }
 
+    .titre-page3{
+        h2{
+            font-family:'Shrikhand', sans-serif;
+            font-size: 26px;
+            margin-left: 5%;
+            margin-top: -10px;
+        }
+        .fa-regular.fa-heart{
+            margin-right: -25px;
+            font-size: 25px;
+        }
+        .fa-solid.fa-heart{
+            margin-right: -25px;
+            font-size: 25px;
+            color: white;
+            margin-left: 110px;
+        }
+    }
+
     /*modification page4*/
 
     .image-entete4{
@@ -233,6 +286,25 @@ header-1{
         position: absolute;
         width: 100%;
         margin-left: -50%;
+    }
+
+    .titre-page4{
+        h2{
+            font-family:'Shrikhand', sans-serif;
+            font-size: 26px;
+            margin-left: 5%;
+            margin-top: -10px;
+        }
+        .fa-regular.fa-heart{
+            margin-right: -25px;
+            font-size: 25px;
+        }
+        .fa-solid.fa-heart{
+            margin-right: -25px;
+            font-size: 25px;
+            color: white;
+            margin-left: 70px;
+        }
     }
 
    

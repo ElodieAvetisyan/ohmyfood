@@ -1,4 +1,4 @@
-/*header*/
+/*header de la page d'accueil*/
 .logo{
     font-family: 'Shrikhand', sans-serif;
     text-align: center;
@@ -62,14 +62,15 @@ header{
            font-size: 18px;
            font-weight: 600;
            &:hover{
-            background:linear-gradient(#9256dcea,#ff79d9ca);
+            background: linear-gradient(#9256dcea,#ff79d9ca);
             box-shadow: 0 0 2em rgb(179, 178, 178);
            }
         }
 }
+
            
 
-/*footer*/
+/*footer de toutes les pages*/
 
 footer{
     width: 100%;
