@@ -59,6 +59,12 @@ header-1{
 /* blocs de toutes les pages */
 
     .blocs-entrees{
+        visibility: hidden;
+        animation-duration: 3s;
+        animation-delay: 2s;
+        animation-fill-mode: forwards;
+        animation-name: effetspages; 
+        
         h2{
             font-size: 15px;
             border-bottom: 03px solid #99E2D0;
@@ -76,8 +82,8 @@ header-1{
         box-shadow: 0 0 2em rgb(198, 197, 197);
         display: flex;
         flex-direction: column;
-    
-        }
+    }
+        
         h3{ 
             margin-top: 10px;
             margin-bottom: 05px;
@@ -105,7 +111,14 @@ header-1{
         }
     }
 
+
    .blocs-plats{
+    visibility: hidden;
+    animation-duration: 3s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    animation-name: effetspages; 
+    
     h2{
         font-size: 15px;
         border-bottom: 03px solid $couleurtertiaire;
@@ -153,6 +166,11 @@ header-1{
     }
 
     .blocs-desserts{
+        visibility: hidden;
+        animation-duration: 3s;
+        animation-delay: 4s;
+        animation-fill-mode: forwards;
+        animation-name: effetspages; 
         h2{
         font-size: 15px;
         border-bottom: 03px solid $couleurtertiaire;
@@ -200,6 +218,12 @@ header-1{
     }
 
     .boutton-commander{
+        visibility: hidden;
+        animation-duration: 3s;
+        animation-delay: 4s;
+        animation-fill-mode: forwards;
+        animation-name: effetspages; 
+        
         background:linear-gradient($couleursecondaire,$couleurprimaire);
             border: none;
             box-shadow: 0 0 1em rgb(198, 197, 197);

@@ -387,6 +387,17 @@ section .texte-sous-photo p {
   transition: transform 1s;
 }
 
+/* animation pages arrivée des entrées,plats et desserts*/
+@keyframes effetspages {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
 /* css de la page 1*/
 /* entete de toutes les pages */
 header-1 {
@@ -432,6 +443,13 @@ header-1 .image-entete {
 }
 
 /* blocs de toutes les pages */
+.blocs-entrees {
+  visibility: hidden;
+  animation-duration: 3s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+  animation-name: effetspages;
+}
 .blocs-entrees h2 {
   font-size: 15px;
   border-bottom: 3px solid #99E2D0;
@@ -473,6 +491,13 @@ header-1 .image-entete {
   align-items: center;
 }
 
+.blocs-plats {
+  visibility: hidden;
+  animation-duration: 3s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+  animation-name: effetspages;
+}
 .blocs-plats h2 {
   font-size: 15px;
   border-bottom: 3px solid #99E2D0;
@@ -514,6 +539,13 @@ header-1 .image-entete {
   align-items: center;
 }
 
+.blocs-desserts {
+  visibility: hidden;
+  animation-duration: 3s;
+  animation-delay: 4s;
+  animation-fill-mode: forwards;
+  animation-name: effetspages;
+}
 .blocs-desserts h2 {
   font-size: 15px;
   border-bottom: 3px solid #99E2D0;
@@ -556,6 +588,11 @@ header-1 .image-entete {
 }
 
 .boutton-commander {
+  visibility: hidden;
+  animation-duration: 3s;
+  animation-delay: 4s;
+  animation-fill-mode: forwards;
+  animation-name: effetspages;
   background: linear-gradient(#FF79DA, #9356DC);
   border: none;
   box-shadow: 0 0 1em rgb(198, 197, 197);
