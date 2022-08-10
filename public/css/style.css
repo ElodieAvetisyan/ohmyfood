@@ -215,19 +215,17 @@ section .texte-sous-photo {
   font-size: 15px;
   color: black;
   margin-left: 5%;
-  padding-top: 0;
+  padding-top: 12px;
 }
 section .texte-sous-photo h3 {
   font-size: 19px;
   font-weight: 900;
-  margin: 0;
-  padding: 0;
+  margin: 5px;
 }
 section .texte-sous-photo p {
   font-size: 16px;
   font-weight: 400;
-  margin: 0;
-  padding: 0;
+  margin: 5px;
 }
 
 /*l'encadré vert nouveau sur les 2 premiers blocs*/
@@ -404,6 +402,41 @@ section .texte-sous-photo p {
   transform: scale(1.09);
 }
 
+/*version desktop page acceuil*/
+html {
+  max-width: 2000px;
+}
+
+/* page d'acceuil */
+.quatresblocs .fa-regular.fa-heart {
+  display: inline;
+  float: right;
+  margin-right: 35px;
+  font-size: 22px;
+  margin-top: -32px;
+  color: black;
+  overflow: hidden;
+}
+.quatresblocs .fa-solid.fa-heart {
+  display: inline;
+  float: right;
+  margin-right: 36px;
+  color: transparent;
+  font-size: 22px;
+  margin-top: -32px;
+}
+
+.texte-sous-photo {
+  margin-top: -15px;
+}
+
+/*footer*/
+footer .logo_footer {
+  margin-left: 50px;
+  padding-top: 10px;
+}
+
+/*page 2 en desktop modification*/
 /* css de la page 1*/
 /* entete de toutes les pages */
 header-1 {
