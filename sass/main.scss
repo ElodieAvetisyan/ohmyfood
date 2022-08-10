@@ -44,15 +44,13 @@ header-1{
     .fa-regular.fa-heart{
         margin-right: -25px;
         font-size: 25px;
+        
     }
     .fa-solid.fa-heart{
         margin-right: -25px;
         font-size: 25px;
-        color: white;
+        color: transparent;
         margin-left: 67px;
-        &:hover{
-            color:$couleurprimaire;
-        }
     }
 }
 
@@ -269,7 +267,7 @@ header-1{
         .fa-solid.fa-heart{
             margin-right: -25px;
             font-size: 25px;
-            color: white;
+            color: transparent;
             margin-left: 54px;
         }
     }
@@ -298,7 +296,7 @@ header-1{
         .fa-solid.fa-heart{
             margin-right: -25px;
             font-size: 25px;
-            color: white;
+            color: transparent;
             margin-left: 110px;
         }
     }
@@ -326,7 +324,7 @@ header-1{
         .fa-solid.fa-heart{
             margin-right: -25px;
             font-size: 25px;
-            color: white;
+            color: transparent;
             margin-left: 70px;
         }
     }

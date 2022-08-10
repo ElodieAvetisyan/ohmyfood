@@ -72,27 +72,19 @@
         display:inline;
         float: right;
         margin-right: -5%;
-        font-size: 18px;
-            &:hover{
-           color:$couleurprimaire;
-           cursor: pointer;  
-                   }
+        font-size: 17px;
+        color: black;
+        overflow: hidden;
                          }
 
        .fa-solid.fa-heart{
            display:inline;
             float: right;
             margin-right: 5%;
-            color: white;
+           color: transparent;
            font-size: 18px;
-              &::after{
-              content: "";
-              transition: all 1s ease;
-               color: $couleurprimaire;
-                     }
-                          }
  }
-
+}
 
  /*les blocs des restaurants*/
 

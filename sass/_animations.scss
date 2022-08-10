@@ -114,3 +114,18 @@
     0%{ opacity: 0; visibility: hidden; }
     100% {opacity: 1;visibility: visible;}
 }
+
+/* effets sur les coeurs */
+
+ .fa-solid.fa-heart{
+   background-image: linear-gradient($couleurprimaire,$couleursecondaire);
+   background-clip: text;
+   -webkit-background-clip: text;
+   opacity: 0;
+   transition: all 400ms ease-in-out;
+   &:hover{
+    opacity: 1;
+    transform: scale(1.09);
+   }
+ }
+ 
