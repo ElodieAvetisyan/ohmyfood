@@ -51,7 +51,7 @@
     position: relative;
     background-color: white;
     margin: 10px;
-    height: 80px;
+    height: 70px;
     border-radius: 15px;
     box-shadow: 0 0 2em rgb(198, 197, 197);
     text-overflow: ellipsis;
@@ -71,6 +71,7 @@
 
    & p{
         padding-right: 35px;
+        padding-top: -05px;
          text-overflow: ellipsis;
          white-space: nowrap;
          width: 100%;
@@ -78,17 +79,22 @@
         margin-top: 13px;
         display: block;
         transition: width 400ms;
+        font-size: 15px;
         font-weight: 900;
 
+        &.second{
+            font-weight: 400;
+        }
     }
 
         & .price{
             position: absolute;
             right: 5%;
-            bottom: 16px;
+            bottom: 08px;
             font-weight: bold;
             transform: translateX(0);
             transition: transform 400ms;
+            font-size: 15px;
         }
     }
         .animation-check{
@@ -101,7 +107,7 @@
             top: 0;
             align-items: center;
             border-radius: 0px 15px 15px 0px;
-            font-size: 20px;
+            font-size: 25px;
             transform: translateX(105%);
             transition: transform 400ms;
             justify-content: space-between;
