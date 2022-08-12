@@ -56,8 +56,8 @@
     box-shadow: 0 0 2em rgb(198, 197, 197);
     text-overflow: ellipsis;
     white-space: nowrap;
-    padding: 0 0 0 15px;
     overflow: hidden;
+    padding: 0 0 0 15px;
 &:hover > .animation-check{
     transform: translateX(0);
 }
@@ -72,8 +72,6 @@
    & p{
         padding-right: 35px;
         padding-top: -05px;
-         text-overflow: ellipsis;
-         white-space: nowrap;
          width: 100%;
         margin-right: 56px;
         margin-top: 13px;
@@ -82,8 +80,17 @@
         font-size: 15px;
         font-weight: 900;
 
+        &.first{
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
         &.second{
             font-weight: 400;
+            text-overflow: ellipsis;
+           white-space: nowrap;
+           overflow: hidden;
         }
     }
 
@@ -114,8 +121,11 @@
             & i{
             color: white;
             margin: auto;
-            transform: rotate(-1turn);
+            transform: rotate(360deg);
             transition: transform 400ms;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             }
         }
 

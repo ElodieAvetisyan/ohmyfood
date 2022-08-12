@@ -6,6 +6,16 @@
   padding: 1px;
 }
 
+.fleche a {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  float: left;
+  margin-top: -49px;
+  margin-left: 8%;
+  font-size: 21px;
+}
+
 body {
   width: 100%;
   font-family: "Roboto", sans-serif;
@@ -302,8 +312,8 @@ section .texte-sous-photo p {
   box-shadow: 0 0 2em rgb(198, 197, 197);
   text-overflow: ellipsis;
   white-space: nowrap;
-  padding: 0 0 0 15px;
   overflow: hidden;
+  padding: 0 0 0 15px;
 }
 .bloc_1:hover > .animation-check {
   transform: translateX(0);
@@ -317,8 +327,6 @@ section .texte-sous-photo p {
 .bloc_1 p {
   padding-right: 35px;
   padding-top: -5px;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   width: 100%;
   margin-right: 56px;
   margin-top: 13px;
@@ -327,8 +335,16 @@ section .texte-sous-photo p {
   font-size: 15px;
   font-weight: 900;
 }
+.bloc_1 p.first {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
 .bloc_1 p.second {
   font-weight: 400;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .bloc_1 .price {
   position: absolute;
@@ -358,8 +374,11 @@ section .texte-sous-photo p {
 .animation-check i {
   color: white;
   margin: auto;
-  transform: rotate(-1turn);
+  transform: rotate(360deg);
   transition: transform 400ms;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* animation pages arrivée des entrées,plats et desserts*/
@@ -468,46 +487,12 @@ header-1 .image-entete {
   animation-delay: 2s;
   animation-fill-mode: forwards;
   animation-name: effetspages;
-  /*.bloc{
-      border: 1px solid rgb(217, 215, 215);
-      background-color: white;
-      width: 92%;
-      margin-left: 5%;
-      height: 61px;
-      margin-bottom: 15px;
-      border-radius: 15px;
-      box-shadow: 0 0 2em rgb(198, 197, 197);
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-      display: flex;
-      flex-wrap: wrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-      padding-right: 10px;
-      transition: all 0.3s;
-
-  }*/
 }
 .blocs-entrees h2 {
   font-size: 15px;
   border-bottom: 3px solid #99E2D0;
   width: 50px;
   padding-bottom: 10px;
-}
-.blocs-entrees h3 {
-  margin-top: 10px;
-  margin-bottom: 5px;
-  font-size: 16px;
-  padding-left: 5%;
-  font-weight: 900;
-}
-.blocs-entrees h4 {
-  font-size: 14px;
-  font-weight: 300;
-  margin-top: 0;
-  padding-left: 5%;
 }
 
 .blocs-plats {
@@ -523,31 +508,6 @@ header-1 .image-entete {
   width: 50px;
   padding-bottom: 10px;
 }
-.blocs-plats .bloc {
-  border: 1px solid rgb(217, 215, 215);
-  background-color: white;
-  width: 92%;
-  margin-left: 5%;
-  height: 61px;
-  margin-bottom: 15px;
-  border-radius: 15px;
-  box-shadow: 0 0 2em rgb(198, 197, 197);
-  display: flex;
-  flex-direction: column;
-}
-.blocs-plats h3 {
-  margin-top: 10px;
-  margin-bottom: 5px;
-  font-size: 16px;
-  padding-left: 5%;
-  font-weight: 900;
-}
-.blocs-plats h4 {
-  font-size: 14px;
-  font-weight: 300;
-  margin-top: 0;
-  padding-left: 5%;
-}
 
 .blocs-desserts {
   visibility: hidden;
@@ -561,31 +521,6 @@ header-1 .image-entete {
   border-bottom: 3px solid #99E2D0;
   width: 50px;
   padding-bottom: 10px;
-}
-.blocs-desserts .bloc {
-  border: 1px solid rgb(217, 215, 215);
-  background-color: white;
-  width: 92%;
-  margin-left: 5%;
-  height: 61px;
-  margin-bottom: 15px;
-  border-radius: 15px;
-  box-shadow: 0 0 2em rgb(198, 197, 197);
-  display: flex;
-  flex-direction: column;
-}
-.blocs-desserts h3 {
-  margin-top: 10px;
-  margin-bottom: 5px;
-  font-size: 16px;
-  padding-left: 5%;
-  font-weight: 900;
-}
-.blocs-desserts h4 {
-  font-size: 14px;
-  font-weight: 300;
-  margin-top: 0;
-  padding-left: 5%;
 }
 
 .boutton-commander {
