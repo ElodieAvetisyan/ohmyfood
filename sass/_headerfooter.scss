@@ -75,6 +75,10 @@ header{
             background: linear-gradient(#9256dcea,#ff79d9ca);
             box-shadow: 0 0 2em rgb(179, 178, 178);
            }
+           @media (min-width: 768px){
+            width: 290px;
+            margin-left: 40%;
+           }
         }
 }
 
@@ -93,16 +97,37 @@ footer{
         font-size: 12px;
         margin-left: 12%;
         padding-top: 5%;
+        @media (min-width: 768px){
+           font-size: 18px;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           
+        }
     }
     
    
-    ul li {
+    ul {
+        @media (min-width: 768px){
+         display: flex;
+         flex-direction: row;
+         justify-content: center;
+         align-items: center;
+         margin-left: 10%;
+        }
+    li {
         color: white;
-        padding:05px;
+        padding: 5px;
         font-size: 17px;
         list-style-type: none;
         text-decoration: none;
+        @media (min-width: 768px){
+            width: 25%;
+         font-size: 20px;
+         margin-right: 60px;
+        }
     }
+}
     .fa-solid.fa-utensils{
     padding-right: 25px;
     }

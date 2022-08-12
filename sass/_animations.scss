@@ -118,16 +118,19 @@
             transform: translateX(105%);
             transition: transform 400ms;
             justify-content: space-between;
-            & i{
+            & .fa-solid.fa-circle-check {
             color: white;
             margin: auto;
-            transform: rotate(360deg);
-            transition: transform 400ms;
             display: flex;
             justify-content: center;
             align-items: center;
-            }
+            transform: rotate(360deg);
+                transition: transform 1s ease;
+           }
         }
+
+    
+
 
 /* animation pages arrivée des entrées,plats et desserts*/
 

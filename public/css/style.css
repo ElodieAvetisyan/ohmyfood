@@ -74,6 +74,12 @@ header .bouton-explorer:hover {
   background: linear-gradient(rgba(146, 86, 220, 0.9176470588), rgba(255, 121, 217, 0.7921568627));
   box-shadow: 0 0 2em rgb(179, 178, 178);
 }
+@media (min-width: 768px) {
+  header .bouton-explorer {
+    width: 290px;
+    margin-left: 40%;
+  }
+}
 
 /*footer de toutes les pages*/
 footer {
@@ -89,12 +95,36 @@ footer .logo_footer {
   margin-left: 12%;
   padding-top: 5%;
 }
+@media (min-width: 768px) {
+  footer .logo_footer {
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (min-width: 768px) {
+  footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%;
+  }
+}
 footer ul li {
   color: white;
   padding: 5px;
   font-size: 17px;
   list-style-type: none;
   text-decoration: none;
+}
+@media (min-width: 768px) {
+  footer ul li {
+    width: 25%;
+    font-size: 20px;
+    margin-right: 60px;
+  }
 }
 footer .fa-solid.fa-utensils {
   padding-right: 25px;
@@ -371,14 +401,14 @@ section .texte-sous-photo p {
   transition: transform 400ms;
   justify-content: space-between;
 }
-.animation-check i {
+.animation-check .fa-solid.fa-circle-check {
   color: white;
   margin: auto;
-  transform: rotate(360deg);
-  transition: transform 400ms;
   display: flex;
   justify-content: center;
   align-items: center;
+  transform: rotate(360deg);
+  transition: transform 1s ease;
 }
 
 /* animation pages arrivée des entrées,plats et desserts*/
