@@ -21,6 +21,8 @@ header-1{
         position: absolute;
      width: 100%;
      margin-left: -50%;
+     @media (min-width: 768px){
+    }
     }
 }
 
@@ -30,8 +32,12 @@ header-1{
     background-color: rgb(240, 234, 234);
     border-radius: 40px 40px 0 0;
    width: 100%;  
-   
+   @media (min-width: 768px){
+    height: 100%;
+    margin-top: 25%;
 }
+} 
+
 /*entete page 1*/
 
 .titre-page1{
@@ -40,34 +46,48 @@ header-1{
         font-size: 26px;
         margin-left: 5%;
         margin-top: -10px;
+        
     }
     .fa-regular.fa-heart{
         margin-right: -25px;
         font-size: 25px;
-        
+        @media (min-width: 768px){
+            margin-left: 0px;
+        }
     }
     .fa-solid.fa-heart{
         margin-right: -25px;
         font-size: 25px;
         color: transparent;
         margin-left: 67px;
+        @media (min-width: 768px){
+            margin-left: 350px;
+           
+        }
     }
 }
 
 /* blocs de toutes les pages */
 
-    .blocs-entrees{
+        .blocs-entrees{
         visibility: hidden;
         animation-duration: 3s;
         animation-delay: 2s;
         animation-fill-mode: forwards;
         animation-name: effetspages; 
+        @media (min-width: 768px){
+            width: 40%;
+            margin-left: 10%;
+        }
         
         h2{
             font-size: 15px;
             border-bottom: 03px solid #99E2D0;
             width: 50px;
             padding-bottom: 10px;
+            @media (min-width: 768px){
+                margin-left: 45%;
+            }
         }
     }
 
@@ -77,13 +97,23 @@ header-1{
     animation-duration: 3s;
     animation-delay: 3s;
     animation-fill-mode: forwards;
-    animation-name: effetspages; 
+    animation-name: effetspages;
+    @media (min-width: 768px){
+        width: 40%;
+        display: inline-block;
+        float: right;
+        margin-top: -310px;
+        margin-right: 10%;
+    }
     
     h2{
         font-size: 15px;
         border-bottom: 03px solid $couleurtertiaire;
         width: 50px;
         padding-bottom: 10px;
+        @media (min-width: 768px){
+            margin-left: 45%;
+        }
     }
     }
 
@@ -93,11 +123,19 @@ header-1{
         animation-delay: 4s;
         animation-fill-mode: forwards;
         animation-name: effetspages; 
+        @media (min-width: 768px){
+            width: 50%;
+            margin-left: 25%;
+        }
         h2{
         font-size: 15px;
         border-bottom: 03px solid $couleurtertiaire;
         width: 50px;
         padding-bottom: 10px;
+        @media (min-width: 768px){
+            margin-left: 45%;
+            font-weight: bold;
+        }
     } 
     }
 
@@ -122,12 +160,17 @@ header-1{
         text-decoration: none;
         list-style: none;
         color: white;
+        @media (min-width: 768px){
+            width: 300px;
+            margin-left: 32%;
+        }
         &:hover{
             background:linear-gradient(#ff79d9ca,#9256dcca);
             box-shadow: 0 0 2em rgb(179, 178, 178);
            }
         
     }
+
 
     /*modification page 2*/
 
@@ -147,12 +190,19 @@ header-1{
         .fa-regular.fa-heart{
             margin-right: -25px;
             font-size: 25px;
+            @media (min-width: 768px){
+                margin-left: 0px;
+            }
         }
         .fa-solid.fa-heart{
             margin-right: -25px;
             font-size: 25px;
             color: transparent;
             margin-left: 54px;
+            @media (min-width: 768px){
+                margin-left: 350px;
+               
+            }
         }
     }
 
@@ -176,12 +226,19 @@ header-1{
         .fa-regular.fa-heart{
             margin-right: -25px;
             font-size: 25px;
+            @media (min-width: 768px){
+                margin-left: 0px;
+            }
         }
         .fa-solid.fa-heart{
             margin-right: -25px;
             font-size: 25px;
             color: transparent;
             margin-left: 110px;
+            @media (min-width: 768px){
+                margin-left: 350px;
+               
+            }
         }
     }
 
@@ -204,12 +261,19 @@ header-1{
         .fa-regular.fa-heart{
             margin-right: -25px;
             font-size: 25px;
+            @media (min-width: 768px){
+                margin-left: 0px;
+            }
         }
         .fa-solid.fa-heart{
             margin-right: -25px;
             font-size: 25px;
             color: transparent;
             margin-left: 70px;
+            @media (min-width: 768px){
+                margin-left: 350px;
+               
+            }
         }
     }
 

@@ -7,10 +7,23 @@
         font-weight: 900;
         margin-left: 5%;
         padding-top: 5%;
+        @media (min-width: 768px){
+          padding-top: 30px;
+          margin: 0;
+          padding-bottom: 30px;
+          font-size: 25px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+           }
     }
 
     ul {
        width: 100%;
+       @media (min-width: 768px){
+        display: flex;
+        flex-direction: row;
+       }
        }
     span{
         padding: 0px;
@@ -25,6 +38,9 @@
         color: white;
         font-size: 12px;
         margin-right:20px;
+        @media (min-width: 768px){
+            margin-left: -30px;
+            }
     }
     
     li{
@@ -39,24 +55,37 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        @media (min-width: 768px){
+            width: 230px;
+            font-size: 14px;
+           }
         &:hover{
             background-color: #deccf4ca;
                }
       }
     .fa-solid.fa-mobile-screen-button{
        margin-right: 20px;
+       @media (min-width: 768px){
+       margin-left: 0;
+       }
        &:hover{
        color:$couleurprimaire;
        }
     }
     .fa-solid.fa-list{
         margin-right: 20px;
+        @media (min-width: 768px){
+            margin-left: 0;
+            }
         &:hover{
             color:$couleurprimaire;
            }
     }
     .fa-solid.fa-store{
         margin-right: 20px;
+        @media (min-width: 768px){
+            margin-left: 0;
+            }
         &:hover{
             color: $couleurprimaire;
            }
@@ -68,6 +97,16 @@
 /*les coeurs de la page d'acceuil*/
 
 .quatresblocs{
+    @media (min-width: 768px){
+        height: 500px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+       
+    }
+
     .fa-regular.fa-heart{
         display:inline;
         float: right;
@@ -93,6 +132,11 @@ width: 100%;
 height: 100%;
 background-color: rgba(240, 234, 234, 0.81);
 padding: 20px 0;
+@media (min-width: 768px){
+    height: 650px;
+   
+}
+
 .bloc-acc a{
     position: relative;
     display: block;
@@ -106,7 +150,16 @@ padding: 20px 0;
     overflow: hidden;
     text-decoration: none;
     box-shadow: 0 0 1em rgb(198, 197, 197);
-
+    @media (min-width: 768px){
+     display: block;
+     flex-wrap: wrap;
+     margin-right: 140px;
+     margin-left: 10px;
+     margin-top: 0;
+     width: 96%;
+     align-items: center;
+     
+    }
 }
 figure{
     margin: 0;
@@ -153,6 +206,9 @@ figure{
     display: flex;
     justify-content: center;
     align-items: center;
+    @media (min-width: 768px){
+        left: 78%;
+    }
     }
   
 }

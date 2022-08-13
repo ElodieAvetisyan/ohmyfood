@@ -44,11 +44,21 @@ header .ville {
 header form {
   width: 100%;
 }
+@media (min-width: 768px) {
+  header form {
+    height: 250px;
+  }
+}
 header h2 {
   margin-top: 10%;
   font-size: 25px;
   font-weight: 900;
   text-align: center;
+}
+@media (min-width: 768px) {
+  header h2 {
+    margin-top: 20px;
+  }
 }
 header h3 {
   font-size: 17px;
@@ -70,14 +80,24 @@ header .bouton-explorer {
   font-size: 18px;
   font-weight: 600;
 }
+@media (min-width: 768px) {
+  header .bouton-explorer {
+    margin-top: 10px;
+    width: 290px;
+    margin-left: 0;
+  }
+}
 header .bouton-explorer:hover {
   background: linear-gradient(rgba(146, 86, 220, 0.9176470588), rgba(255, 121, 217, 0.7921568627));
   box-shadow: 0 0 2em rgb(179, 178, 178);
 }
+
 @media (min-width: 768px) {
-  header .bouton-explorer {
-    width: 290px;
-    margin-left: 40%;
+  .texte-entete {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -121,16 +141,33 @@ footer ul li {
 }
 @media (min-width: 768px) {
   footer ul li {
-    width: 25%;
-    font-size: 20px;
+    width: 100%;
+    font-size: 17px;
     margin-right: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 footer .fa-solid.fa-utensils {
   padding-right: 25px;
 }
+@media (min-width: 768px) {
+  footer .fa-solid.fa-utensils {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
 footer .fa-solid.fa-handshake-angle {
   padding-right: 20px;
+}
+@media (min-width: 768px) {
+  footer .fa-solid.fa-handshake-angle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 footer a {
   text-decoration: none;
@@ -148,8 +185,25 @@ main h2 {
   margin-left: 5%;
   padding-top: 5%;
 }
+@media (min-width: 768px) {
+  main h2 {
+    padding-top: 30px;
+    margin: 0;
+    padding-bottom: 30px;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
 main ul {
   width: 100%;
+}
+@media (min-width: 768px) {
+  main ul {
+    display: flex;
+    flex-direction: row;
+  }
 }
 main span {
   padding: 0px;
@@ -165,6 +219,11 @@ main span {
   font-size: 12px;
   margin-right: 20px;
 }
+@media (min-width: 768px) {
+  main span {
+    margin-left: -30px;
+  }
+}
 main li {
   border: 1px solid rgba(240, 234, 234, 0.81);
   box-shadow: 0 0 1em rgb(198, 197, 197);
@@ -178,11 +237,22 @@ main li {
   justify-content: center;
   align-items: center;
 }
+@media (min-width: 768px) {
+  main li {
+    width: 230px;
+    font-size: 14px;
+  }
+}
 main li:hover {
   background-color: rgba(222, 204, 244, 0.7921568627);
 }
 main .fa-solid.fa-mobile-screen-button {
   margin-right: 20px;
+}
+@media (min-width: 768px) {
+  main .fa-solid.fa-mobile-screen-button {
+    margin-left: 0;
+  }
 }
 main .fa-solid.fa-mobile-screen-button:hover {
   color: #9356DC;
@@ -190,11 +260,21 @@ main .fa-solid.fa-mobile-screen-button:hover {
 main .fa-solid.fa-list {
   margin-right: 20px;
 }
+@media (min-width: 768px) {
+  main .fa-solid.fa-list {
+    margin-left: 0;
+  }
+}
 main .fa-solid.fa-list:hover {
   color: #9356DC;
 }
 main .fa-solid.fa-store {
   margin-right: 20px;
+}
+@media (min-width: 768px) {
+  main .fa-solid.fa-store {
+    margin-left: 0;
+  }
 }
 main .fa-solid.fa-store:hover {
   color: #9356DC;
@@ -202,6 +282,16 @@ main .fa-solid.fa-store:hover {
 
 /*partie restaurants de la page d'acceuil*/
 /*les coeurs de la page d'acceuil*/
+@media (min-width: 768px) {
+  .quatresblocs {
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .quatresblocs .fa-regular.fa-heart {
   display: inline;
   float: right;
@@ -224,6 +314,11 @@ section {
   background-color: rgba(240, 234, 234, 0.81);
   padding: 20px 0;
 }
+@media (min-width: 768px) {
+  section {
+    height: 650px;
+  }
+}
 section .bloc-acc a {
   position: relative;
   display: block;
@@ -237,6 +332,17 @@ section .bloc-acc a {
   overflow: hidden;
   text-decoration: none;
   box-shadow: 0 0 1em rgb(198, 197, 197);
+}
+@media (min-width: 768px) {
+  section .bloc-acc a {
+    display: block;
+    flex-wrap: wrap;
+    margin-right: 140px;
+    margin-left: 10px;
+    margin-top: 0;
+    width: 96%;
+    align-items: center;
+  }
 }
 section figure {
   margin: 0;
@@ -281,6 +387,11 @@ section .texte-sous-photo p {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (min-width: 768px) {
+  .nouveau span {
+    left: 78%;
+  }
 }
 
 /* style pour le loading spiner*/
@@ -483,13 +594,18 @@ header-1 .image-entete {
   width: 100%;
   margin-left: -50%;
 }
-
 .page-1 {
   position: relative;
   margin-top: 55%;
   background-color: rgb(240, 234, 234);
   border-radius: 40px 40px 0 0;
   width: 100%;
+}
+@media (min-width: 768px) {
+  .page-1 {
+    height: 100%;
+    margin-top: 25%;
+  }
 }
 
 /*entete page 1*/
@@ -503,11 +619,21 @@ header-1 .image-entete {
   margin-right: -25px;
   font-size: 25px;
 }
+@media (min-width: 768px) {
+  .titre-page1 .fa-regular.fa-heart {
+    margin-left: 0px;
+  }
+}
 .titre-page1 .fa-solid.fa-heart {
   margin-right: -25px;
   font-size: 25px;
   color: transparent;
   margin-left: 67px;
+}
+@media (min-width: 768px) {
+  .titre-page1 .fa-solid.fa-heart {
+    margin-left: 350px;
+  }
 }
 
 /* blocs de toutes les pages */
@@ -518,11 +644,22 @@ header-1 .image-entete {
   animation-fill-mode: forwards;
   animation-name: effetspages;
 }
+@media (min-width: 768px) {
+  .blocs-entrees {
+    width: 40%;
+    margin-left: 10%;
+  }
+}
 .blocs-entrees h2 {
   font-size: 15px;
   border-bottom: 3px solid #99E2D0;
   width: 50px;
   padding-bottom: 10px;
+}
+@media (min-width: 768px) {
+  .blocs-entrees h2 {
+    margin-left: 45%;
+  }
 }
 
 .blocs-plats {
@@ -532,11 +669,25 @@ header-1 .image-entete {
   animation-fill-mode: forwards;
   animation-name: effetspages;
 }
+@media (min-width: 768px) {
+  .blocs-plats {
+    width: 40%;
+    display: inline-block;
+    float: right;
+    margin-top: -310px;
+    margin-right: 10%;
+  }
+}
 .blocs-plats h2 {
   font-size: 15px;
   border-bottom: 3px solid #99E2D0;
   width: 50px;
   padding-bottom: 10px;
+}
+@media (min-width: 768px) {
+  .blocs-plats h2 {
+    margin-left: 45%;
+  }
 }
 
 .blocs-desserts {
@@ -546,11 +697,23 @@ header-1 .image-entete {
   animation-fill-mode: forwards;
   animation-name: effetspages;
 }
+@media (min-width: 768px) {
+  .blocs-desserts {
+    width: 50%;
+    margin-left: 25%;
+  }
+}
 .blocs-desserts h2 {
   font-size: 15px;
   border-bottom: 3px solid #99E2D0;
   width: 50px;
   padding-bottom: 10px;
+}
+@media (min-width: 768px) {
+  .blocs-desserts h2 {
+    margin-left: 45%;
+    font-weight: bold;
+  }
 }
 
 .boutton-commander {
@@ -574,6 +737,12 @@ header-1 .image-entete {
   list-style: none;
   color: white;
 }
+@media (min-width: 768px) {
+  .boutton-commander {
+    width: 300px;
+    margin-left: 32%;
+  }
+}
 .boutton-commander:hover {
   background: linear-gradient(rgba(255, 121, 217, 0.7921568627), rgba(146, 86, 220, 0.7921568627));
   box-shadow: 0 0 2em rgb(179, 178, 178);
@@ -596,11 +765,21 @@ header-1 .image-entete {
   margin-right: -25px;
   font-size: 25px;
 }
+@media (min-width: 768px) {
+  .titre-page2 .fa-regular.fa-heart {
+    margin-left: 0px;
+  }
+}
 .titre-page2 .fa-solid.fa-heart {
   margin-right: -25px;
   font-size: 25px;
   color: transparent;
   margin-left: 54px;
+}
+@media (min-width: 768px) {
+  .titre-page2 .fa-solid.fa-heart {
+    margin-left: 350px;
+  }
 }
 
 /*modification page 3*/
@@ -621,11 +800,21 @@ header-1 .image-entete {
   margin-right: -25px;
   font-size: 25px;
 }
+@media (min-width: 768px) {
+  .titre-page3 .fa-regular.fa-heart {
+    margin-left: 0px;
+  }
+}
 .titre-page3 .fa-solid.fa-heart {
   margin-right: -25px;
   font-size: 25px;
   color: transparent;
   margin-left: 110px;
+}
+@media (min-width: 768px) {
+  .titre-page3 .fa-solid.fa-heart {
+    margin-left: 350px;
+  }
 }
 
 /*modification page4*/
@@ -646,11 +835,21 @@ header-1 .image-entete {
   margin-right: -25px;
   font-size: 25px;
 }
+@media (min-width: 768px) {
+  .titre-page4 .fa-regular.fa-heart {
+    margin-left: 0px;
+  }
+}
 .titre-page4 .fa-solid.fa-heart {
   margin-right: -25px;
   font-size: 25px;
   color: transparent;
   margin-left: 70px;
+}
+@media (min-width: 768px) {
+  .titre-page4 .fa-solid.fa-heart {
+    margin-left: 350px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

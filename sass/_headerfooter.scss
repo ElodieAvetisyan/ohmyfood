@@ -28,6 +28,9 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    @media (min-width: 768px){
+    
+       }
 
     .localisation{
     border: 1px solid rgb(246, 244, 244);
@@ -44,6 +47,9 @@ header{
           }
     form{
   width: 100%;
+  @media (min-width: 768px){
+    height: 250px;
+   }
         }
 
         h2{
@@ -51,6 +57,9 @@ header{
             font-size: 25px;
             font-weight: 900;
             text-align: center;
+            @media (min-width: 768px){
+             margin-top: 20px;
+            }
         }
         h3{
             font-size: 17px;
@@ -71,15 +80,29 @@ header{
            height: 50px;
            font-size: 18px;
            font-weight: 600;
+
+           @media (min-width: 768px){
+            margin-top: 10px;
+            width: 290px;
+            margin-left: 0;
+            
+           }
+
            &:hover{
             background: linear-gradient(#9256dcea,#ff79d9ca);
             box-shadow: 0 0 2em rgb(179, 178, 178);
            }
-           @media (min-width: 768px){
-            width: 290px;
-            margin-left: 40%;
-           }
         }
+}
+
+.texte-entete{
+    @media (min-width: 768px){
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+       }
+
 }
 
            
@@ -122,17 +145,30 @@ footer{
         list-style-type: none;
         text-decoration: none;
         @media (min-width: 768px){
-            width: 25%;
-         font-size: 20px;
+            width: 100%;
+         font-size: 17px;
          margin-right: 60px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
         }
     }
 }
     .fa-solid.fa-utensils{
     padding-right: 25px;
+    @media (min-width: 768px){
+ display: flex;
+ justify-content: center;
+ align-items: center;
+    }
     }
     .fa-solid.fa-handshake-angle{
         padding-right: 20px;
+        @media (min-width: 768px){
+            display: flex;
+            justify-content: center;
+            align-items: center;
+               }
     }
 
     & a{
