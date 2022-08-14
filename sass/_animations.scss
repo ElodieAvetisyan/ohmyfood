@@ -58,15 +58,20 @@
     white-space: nowrap;
     overflow: hidden;
     padding: 0 0 0 15px;
-&:hover > .animation-check{
-    transform: translateX(0);
-}
-&:hover > .price{
-    transform: translateX(-200%);
-}
-&:hover > p{
-    width: calc(100% - 70px);
-}
+    &:hover > .animation-check{
+        transform: translateX(0);
+    }
+    &:hover > .price{
+        transform: translateX(-200%);
+    }
+    &:hover > p{
+        width: calc(100% - 70px);
+    }
+    &:hover{
+        .fa-circle-check{
+            transform: rotate(-360deg) !important;
+        }
+    }
 
 
    & p{
@@ -124,7 +129,6 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            transform: rotate(360deg);
                 transition: transform 1s ease;
            }
         }

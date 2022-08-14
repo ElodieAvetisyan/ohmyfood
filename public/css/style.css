@@ -465,6 +465,9 @@ section .texte-sous-photo p {
 .bloc_1:hover > p {
   width: calc(100% - 70px);
 }
+.bloc_1:hover .fa-circle-check {
+  transform: rotate(-360deg) !important;
+}
 .bloc_1 p {
   padding-right: 35px;
   padding-top: -5px;
@@ -518,7 +521,6 @@ section .texte-sous-photo p {
   display: flex;
   justify-content: center;
   align-items: center;
-  transform: rotate(360deg);
   transition: transform 1s ease;
 }
 
@@ -588,12 +590,30 @@ header-1 {
 header-1 .logo-1 {
   text-align: center;
   font-family: "Shrikhand", sans-serif;
+  padding: 0px;
+}
+@media (min-width: 768px) {
+  header-1 .logo2 {
+    background-color: #fff;
+    padding: 5px;
+  }
 }
 header-1 .image-entete {
   position: absolute;
   width: 100%;
   margin-left: -50%;
 }
+@media (min-width: 768px) {
+  header-1 .image-entete {
+    position: absolute;
+    margin-left: 0;
+    width: 100%;
+    left: 0;
+    top: -120px;
+    z-index: -1;
+  }
+}
+
 .page-1 {
   position: relative;
   margin-top: 55%;
@@ -637,6 +657,12 @@ header-1 .image-entete {
 }
 
 /* blocs de toutes les pages */
+@media (min-width: 768px) {
+  .logo {
+    padding: 0px;
+  }
+}
+
 .blocs-entrees {
   visibility: hidden;
   animation-duration: 3s;
@@ -754,6 +780,23 @@ header-1 .image-entete {
   position: absolute;
   margin-left: -50%;
 }
+@media (min-width: 768px) {
+  .image-entete2 {
+    position: absolute;
+    margin-left: 0;
+    width: 100%;
+    left: 0;
+    top: -70px;
+    z-index: -1;
+  }
+}
+
+@media (min-width: 768px) {
+  .logo2 {
+    background-color: #fff;
+    padding: 5px;
+  }
+}
 
 .titre-page2 h2 {
   font-family: "Shrikhand", sans-serif;
@@ -789,6 +832,23 @@ header-1 .image-entete {
   width: 100%;
   margin-left: -50%;
 }
+@media (min-width: 768px) {
+  .image-entete3 {
+    position: absolute;
+    margin-left: 0;
+    width: 100%;
+    left: 0;
+    top: -125px;
+    z-index: -1;
+  }
+}
+
+@media (min-width: 768px) {
+  .logo2 {
+    background-color: #fff;
+    padding: 5px;
+  }
+}
 
 .titre-page3 h2 {
   font-family: "Shrikhand", sans-serif;
@@ -823,6 +883,23 @@ header-1 .image-entete {
   position: absolute;
   width: 100%;
   margin-left: -50%;
+}
+@media (min-width: 768px) {
+  .image-entete4 {
+    position: absolute;
+    margin-left: 0;
+    width: 100%;
+    left: 0;
+    top: -165px;
+    z-index: -1;
+  }
+}
+
+@media (min-width: 768px) {
+  .logo2 {
+    background-color: #fff;
+    padding: 5px;
+  }
 }
 
 .titre-page4 h2 {
