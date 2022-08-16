@@ -69,7 +69,7 @@
     }
     &:hover{
         .fa-circle-check{
-            transform: rotate(-360deg) !important;
+            transform: rotate(360deg) !important;
         }
     }
 
